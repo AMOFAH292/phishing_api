@@ -10,8 +10,8 @@ app = Flask(__name__)
 
 # Load the trained model and scaler
 try:
-    model = joblib.load('PHISHING_MODEL/model.pkl')
-    scaler = joblib.load('PHISHING_MODEL/scaler.pkl')
+    model = joblib.load('PHISHING_MODEL/PHISHIN_MODEL/model.pkl')
+    scaler = joblib.load('PHISHING_MODEL/PHISHING_MODEL/scaler.pkl')
 except Exception as e:
     print(f"Error loading model or scaler: {e}")
     raise
