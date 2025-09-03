@@ -3,10 +3,12 @@ import joblib
 from flask import Flask, request, jsonify
 from sklearn.preprocessing import StandardScaler
 import numpy as np
+from flask_cors import CORS
 import os
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app)
 
 # Load the trained model and scaler
 try:
